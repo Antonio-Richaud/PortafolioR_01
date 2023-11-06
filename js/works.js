@@ -1,8 +1,8 @@
 const projects = [
   {
     id: '0',
-    image: 'images/Interjum.png',
-    imageProject: 'images/Interjum1.png',
+    image: './images/Interjum.png',
+    imageProject: './images/Interjum1.png',
     title: 'Interjum Group',
     autor: 'Antonio Richaud',
     position: 'Software Developer',
