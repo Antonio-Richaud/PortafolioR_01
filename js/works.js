@@ -1,8 +1,8 @@
 const projects = [
   {
     id: '0',
-    image: './images/Interjum.png',
-    imageProject: './images/Interjum1.png',
+    image: './images/Interjum.PNG',
+    imageProject: './images/Interjum1.PNG',
     title: 'Interjum Group',
     autor: 'Antonio Richaud',
     position: 'Software Developer',
@@ -16,8 +16,8 @@ const projects = [
 
   {
     id: '1',
-    image: 'images/Jumbo.png',
-    imageProject: 'images/Jumbo1.png',
+    image: 'images/Jumbo.PNG',
+    imageProject: 'images/Jumbo1.PNG',
     title: 'Jumbo',
     autor: 'Antonio Richaud',
     position: 'Software Developer',
@@ -31,8 +31,8 @@ const projects = [
 
   {
     id: '2',
-    image: 'images/MetalworksMx.png',
-    imageProject: 'images/MetalworksMx1.png',
+    image: 'images/MetalworksMx.PNG',
+    imageProject: 'images/MetalworksMx1.PNG',
     title: 'MetalWorks Mx',
     autor: 'Antonio Richaud',
     position: 'Software Developer',
@@ -46,8 +46,8 @@ const projects = [
 
   {
     id: '3',
-    image: 'images/InWow.png',
-    imageProject: 'images/InWow1.png',
+    image: 'images/InWow.PNG',
+    imageProject: 'images/InWow1.PNG',
     title: 'InWow',
     autor: 'Antonio Richaud',
     position: 'Software Developer',
