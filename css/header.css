@@ -92,55 +92,78 @@ header {
   overflow-y: hidden;
 }
 
-/* ---- Aqui empieza el pedo del boton de idiomas ---- */
+/* ---- BOTON DE IDIOMAS ---- */
+
+/* Has un diseño bonito y minimalista para mi boton de idiomas, por favor */
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropbtn {
-  display: inline-block;
-  font: normal 600 32px "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0.1em;
-  transition: color 0.2s;
   background-color: #fff;
-  color: #333; /* Cambiado a un tono de gris más oscuro */
-  border: none; /* Eliminado el borde */
-  padding: 15px;
-  font-size: .9em;
+  color: #6070ff;
+  font: normal 600 18px "Poppins", sans-serif;
+  border: none;
   cursor: pointer;
+  padding: 0 16px;
+  display: flex;
   align-items: center;
-  width: 200px; /* Establece el ancho a 100 píxeles */
+  justify-content: center;
+  height: 48px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #fff;
-  width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(96, 112, 255, 0.2);
   z-index: 1;
-  font: normal 700 18px "Poppins", sans-serif;
-  align-items: center;
-  text-align: center; /* Texto centrado */
-  padding: 15px;
+  border-radius: 8px;
+  padding: 8px 0;
+}
 
-  .dropdown-content a {
-    color: #333; /* Cambiado a un tono de gris más oscuro */
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-  }
+.dropdown-content a {
+  color: #6070ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font: normal 600 18px "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .dropdown-content a::before {
-  img: "../images/mx.png"; /* Código de entidad para un triángulo derecho */
-  position: absolute;
-  left: 10px;
-  padding-right: 10px;
-}
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/flags.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 /* ---- Aqui termina el diseño del boton de idiomas ---- */

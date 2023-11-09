@@ -19,7 +19,7 @@
   width: 295px;
   height: 220px;
   align-self: center;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .card__img:hover {
