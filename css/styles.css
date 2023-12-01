@@ -52,7 +52,7 @@ body {
   }
 
   /* Seccion Hero */
-  .hero {
+  /* .hero {
     padding-left: min(18%);
     padding-right: min(18%);
     background-image: url("../images/header-bg.svg");
@@ -60,6 +60,8 @@ body {
     width: 100%;
     margin-top: 60px;
   }
+  */
+
 
   .hero__title {
     margin-top: min(30%);
