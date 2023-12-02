@@ -1,3 +1,5 @@
+/* ---- Sección de portafolio ---- */
+
 .card-project {
   background-color: #fff;
   grid-column-start: 2;
@@ -70,6 +72,7 @@
   line-height: 24px;
   color: #344563;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .card__languages {
@@ -86,4 +89,26 @@
   color: #6070ff;
   font: normal 500 12px "Poppins", sans-serif;
   letter-spacing: 0.03em;
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .card-project {
+    flex-direction: row;
+    padding: 30px;
+    margin-top: 0px;
+  }
+
+  .card__image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card__img {
+    width: 440px;
+    height: 300px;
+    align-self: center;
+    transition: 0.5s;
+  }
+
 }

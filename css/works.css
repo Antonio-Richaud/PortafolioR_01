@@ -5,3 +5,15 @@
   row-gap: 80px;
   margin-top: 80px;
 }
+
+@media only screen and (min-width: 1280px) {
+  
+  .works {
+    background-color: #e5e5e5;
+    display: grid;
+    grid-template-columns: 12px auto 12px;
+    row-gap: 80px;
+    margin-top: 80px;
+  }
+
+}

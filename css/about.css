@@ -16,9 +16,11 @@
 
 .about__description {
   margin-top: 12px;
+  margin-right: 25px;
   font: normal 400 16px 'Poppins', sans-serif;
   line-height: 24px;
   color: #344563;
+  text-align: justify;
 }
 
 .about__social {
@@ -96,4 +98,43 @@
 
 .skills-logo:hover {
   transform: scale(1.2);
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+.about__extra {
+  width: min(50%);
+  margin-top: 100px;
+}
+
+.about__categories-submenu {
+  flex-direction: row;
+  display: inline-flex;
+}
+
+.about__categories-submenu li {
+  margin-right: 20px;
+  width: 85px;
+}
+
+.about__categories-submenu li a {
+  padding: 12px 10px;
+  align-items: flex-start;
+  font: normal 500 12px 'Poppins', sans-serif;
+}
+
+.submenu__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__categories {
+  margin-bottom: 200px;
+}
+
+.about__categories-submenu img {
+  margin-bottom: 5px;
+}
+
 }
