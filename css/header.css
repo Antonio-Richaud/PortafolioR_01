@@ -1,3 +1,4 @@
+/* Configuracion general del encabezado */
 header {
   background-color: #fff;
   width: 100vw;
@@ -11,7 +12,8 @@ header {
   z-index: 1;
 }
 
-.header__logo {
+/* Configuración del logo del encabezado */
+.header_logo {
   width: 200px;
   height: 20px;
   margin-left: 24px;
@@ -24,6 +26,7 @@ header {
   cursor: pointer;
 }
 
+/* Configuracion de la barra de navegacion del encabezado */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,6 +35,7 @@ header {
 
 }
 
+/* Configuación de cada uno de los elementos de la barra de navegación */
 .nav_link {
   transition: 0.7s ease;
   color: #fff;
@@ -40,6 +44,8 @@ header {
 .nav_link:hover {
   color: #6070ff;
 }
+
+/* Estudiar para que es esto */
 
 .nav_menu.active {
   left: 0;
@@ -77,9 +83,7 @@ header {
   overflow-y: hidden;
 }
 
-/* ---- BOTON DE IDIOMAS ---- */
-
-/* Has un diseño bonito y minimalista para mi boton de idiomas, por favor */
+/* Configuración del boton de idiomas (Arreglar) */
 
 .dropdown {
   position: relative;
@@ -150,10 +154,11 @@ header {
   display: inline-block;
   margin-right: 8px;
 }
+/* Fin de la configuración del boton de idiomas */
 
-/* ---- Aqui termina el diseño del boton de idiomas ---- */
-
+/* Configuración para la Macbook Air de 13 pulgadas */
 @media only screen and (max-width: 768px) {
+
   .nav_menu {
     position: fixed;
     left: -100%;

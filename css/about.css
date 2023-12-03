@@ -8,7 +8,7 @@
 }
 
 .about__title {
-  margin-top: 100px;
+  margin-top: 110px;
   font: normal 700 40px 'Poppins', sans-serif;
   line-height: 52px;
   color: #172b4d;
@@ -103,6 +103,22 @@
 
 @media only screen and (min-width: 1280px) {
 
+  .about-myself {
+    background-color: #fff;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 80px;
+  }
+
+  .about__extra{
+    margin-right: 70px;
+  }
+
+.about__main {
+  padding-right: 0px;
+}
+  
 .about__extra {
   width: min(50%);
   margin-top: 100px;

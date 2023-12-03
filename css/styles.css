@@ -203,7 +203,7 @@ body {
  */
   /* Seccion de contacto */
 
-  .contact-me {
+  /*.contact-me {
     background-image: url(/images/contact-form-background-shapes@2x.png);
     background-size: contain;
     background-position: center;
@@ -230,7 +230,7 @@ body {
 
   .form-btn {
     align-self: center;
-  }
+  }*/
 }
 
 
