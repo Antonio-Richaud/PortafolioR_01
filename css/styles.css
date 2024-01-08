@@ -2,6 +2,9 @@
 /* ------------- HOJA PRINCIPAL DE CSS ------------- */
 /* --------- PORTAFOLIO DE ANTONIO RICHAUD --------- */
 /* ------------------------------------------------- */
+/* - AUN SE TIENE QUE REVISAR LAS AREAS COMENTADAS - */
+/* --- SE DEBE HACER VALORACIÓN DE FUNCIONALIDAD --- */
+/* ------------------------------------------------- */
 
 /* ------------------------------------------------- */
 /* ----- IMPORTACION DE FUNTES Y ARCHIVOS CSS -----  */
@@ -55,7 +58,7 @@
 
 /* ------------------------------------------------- */
 /* ------ DIRECCION A LOS ESTILOS PARA MODAL ------- */
-/* SE DEBE INVESTIGAR DONDE ESTA INTEGRADO ESTE CSS  */
+/* -- LOS ELEMENTOS "MODAL" ESTAN EN EL WORKS.JS --- */
 /* ------------------------------------------------- */
 @import url("./modal.css"); 
 
@@ -283,111 +286,161 @@ body {
   }
   */
 
-  /* Seccion modal */
+  /* ------------------------- */
+  /* ----- SECCIÓN MODAL ----- */
+  /* ------------------------- */
 
   .modal-container {
-    margin: 20px auto;
-    padding: 12px 24px;
-    width: 80%;
-    height: 90%;
+
+    /* MARGEN DE 20PX EN TODAS LAS DIRECCIONES Y CENTRADO HORIZONTALMENTE */
+    margin: 20px auto; 
+
+    /* RELLENO DE 12PX VERTICALMENTE Y 24PX HORIZONTALMENTE */
+    padding: 12px 24px; 
+
+    /* ANCHO DEL CONTENEDOR DEL MODAL ES EL 80% DEL CONTENEDOR PADRE */
+    width: 80%; 
+
+    /* ALTURA DEL CONTENEDOR DEL MODAL ES EL 90% DEL CONTENEDOR PADRE */
+    height: 90%; 
+
   }
 
   .modal__image {
-    min-width: 100%;
-    min-height: 75%;
+
+    /* ANCHO MÍNIMO DE LA IMAGEN ES EL 100% DEL CONTENEDOR */
+    min-width: 100%; 
+
+    /* ALTURA MÍNIMA DE LA IMAGEN ES EL 75% DEL CONTENEDOR */
+    min-height: 75%; 
+
   }
 
   .modal-body {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+
+    /* USA FLEXBOX PARA LA DISPOSICIÓN DE LOS ELEMENTOS */
+    display: flex; 
+
+    /* LOS ELEMENTOS SE DISPONEN EN UNA FILA HORIZONTAL */
+    flex-direction: row; 
+
+    /* ESPACIO DE 12PX ENTRE CADA ELEMENTO */
+    gap: 12px; 
+
   }
 
   .modal-body > p {
-    min-width: 65%;
+
+    /* ANCHO MÍNIMO DEL PÁRRAFO DENTRO DEL CUERPO DEL MODAL ES EL 65% */
+    min-width: 65%; 
+
   }
 
   .modal-aside {
-    min-width: 35%;
+
+    /* ANCHO MÍNIMO DE LA SECCIÓN ADICIONAL DEL MODAL ES EL 35% */
+    min-width: 35%; 
+
   }
 
   .modal__languages {
-    margin-left: 12px;
-  }
 
-  /* about me section */
+    /* MARGEN IZQUIERDO DE 12PX PARA LA SECCIÓN DE IDIOMAS */
+    margin-left: 12px; 
+
+  }
+  /* ------------------------- */
+  /* ----- SECCIÓN ABOUT ----- */
+  /* ------------------------- */
 
   .about-myself {
-    padding: 0 10%;
-    flex-direction: row;
+
+    /* RELLENO HORIZONTAL DEL 10% PARA CENTRAR EL CONTENIDO */
+    padding: 0 10%; 
+
+    /* LOS ELEMENTOS SE DISPONEN EN UNA FILA HORIZONTAL */
+    flex-direction: row; 
+
   }
 
   .about__main {
-    width: min(50%);
-    margin-right: 22px;
+
+    /* ANCHO MÍNIMO DEL CONTENIDO PRINCIPAL ES EL 50% */
+    width: min(50%); 
+
+    /* MARGEN DERECHO DE 22PX */
+    margin-right: 22px; 
+
   }
+
  /*
   .about__extra {
-    width: min(50%);
-    margin-top: 100px;
+    width: min(50%); - ANCHO MÍNIMO DEL 50% PARA LA SECCIÓN EXTRA SOBRE MÍ 
+    margin-top: 100px; - MARGEN SUPERIOR DE 100PX 
   }
 
   .about__categories-submenu {
-    display: flex;
-    flex-direction: row;
+    display: flex; - USA FLEXBOX PARA LA DISPOSICIÓN DE LOS ELEMENTOS 
+    flex-direction: row; - LOS ELEMENTOS SE DISPONEN EN UNA FILA HORIZONTAL 
   }
 
   .about__categories-submenu li {
-    margin-right: 24px;
-    width: 100px;
+    margin-right: 24px; - MARGEN DERECHO DE 24PX PARA CADA ELEMENTO DE LA LISTA 
+    width: 100px; - ANCHO FIJO DE 100PX PARA CADA ELEMENTO DE LA LISTA 
   }
 
   .about__categories-submenu li a {
-    padding: 12px 10px;
-    align-items: flex-start;
+    padding: 12px 10px; - RELLENO DE 12PX VERTICAL Y 10PX HORIZONTAL PARA LOS ENLACES 
+    align-items: flex-start; - ALINEA LOS ELEMENTOS AL INICIO DE SU CONTENEDOR FLEXIBLE 
   }
 
   .submenu__link {
-    display: flex;
-    flex-direction: column;
+    display: flex; - USA FLEXBOX PARA LA DISPOSICIÓN DE LOS ELEMENTOS 
+    flex-direction: column; - LOS ELEMENTOS SE DISPONEN EN UNA COLUMNA VERTICAL 
   }
 
   .about__categories {
-    margin-bottom: 200px;
+    margin-bottom: 200px; - MARGEN INFERIOR DE 200PX PARA LA SECCIÓN DE CATEGORÍAS 
   }
 
   .about__categories-submenu img {
-    margin-bottom: 10px;
+    margin-bottom: 10px; - MARGEN INFERIOR DE 10PX PARA LAS IMÁGENES EN EL SUBMENÚ 
   }
- */
-  /* Seccion de contacto */
+  */
 
-  /*.contact-me {
-    background-image: url(/images/contact-form-background-shapes@2x.png);
-    background-size: contain;
-    background-position: center;
+  /* ----------------------------- */
+  /* ---- SECCIÓN DE CONTACTO ---- */
+  /* ----------------------------- */
+
+  /*
+  .contact-me {
+    background-image: url(/images/contact-form-background-shapes@2x.png); - FONDO CON UNA IMAGEN ESPECÍFICA 
+    background-size: contain; - LA IMAGEN DE FONDO SE ESCALA PARA QUE QUEPA COMPLETAMENTE 
+    background-position: center; - LA IMAGEN DE FONDO SE CENTRA 
   }
 
   .contact-title {
-    padding-top: min(16%);
+    padding-top: min(16%); - RELLENO SUPERIOR DEL 16% PARA EL TÍTULO DE CONTACTO 
   }
 
   .contact-legend {
-    padding-left: min(30%);
-    padding-right: min(30%);
+    padding-left: min(30%); - RELLENO IZQUIERDO DEL 30% PARA LA LEYENDA DE CONTACTO 
+    padding-right: min(30%); - RELLENO DERECHO DEL 30% 
   }
 
   .form {
-    padding-left: min(34%);
-    padding-right: min(34%);
-    padding-bottom: min(8.5%);
+    padding-left: min(34%); - RELLENO IZQUIERDO DEL 34% PARA EL FORMULARIO 
+    padding-right: min(34%); - RELLENO DERECHO DEL 34% 
+    padding-bottom: min(8.5%); - RELLENO INFERIOR DEL 8.5% 
   }
 
   .form-list {
-    gap: 27px;
+    gap: 27px; - ESPACIO DE 27PX ENTRE CADA ELEMENTO DEL FORMULARIO 
   }
 
   .form-btn {
-    align-self: center;
-  }*/
+    align-self: center; - EL BOTÓN SE ALINEA A SÍ MISMO EN EL CENTRO 
+  }
+  */
+
 }
