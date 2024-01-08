@@ -59,42 +59,105 @@
 /* ------------------------------------------------- */
 @import url("./modal.css"); 
 
+/* ------------------------------------------------- */
+/* ------------ ESTILOS GENERALES ------------------ */
+/* ------------------------------------------------- */
 * {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
+  /* ELIMINAMOS LOS MÁRGENES POR DEFECTO DE TODOS LOS ELEMENTOS */
+  margin: 0; 
+
+  /* SE AJUSTA EL MODELO DE CAJA PARA MANEJAR MEJOR LOS TAMAÑOS */
+  box-sizing: border-box; 
+
+  /* SE ELIMINA EL RELLENO POR DEFECTO DE TODOS LOS ELEMENTOS */
+  padding: 0; 
 }
+
+/* ------------------------------------------------- */
+/* --------- ESTILOS GENERALES DEL BODY ------------ */
+/* ------------------------------------------------- */
 
 body {
-  background-color: #e5e5e5;
+
+  /* SE ESTABLECE EL COLOR DE FONDO PARA TODO EL CUERPO DEL DOCUMENTO */
+  background-color: #e5e5e5; 
+
 }
 
+/* ------------------------------------------------- */
+/* --------------- RESPONSIVE DESIGN --------------- */
+/* ------------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* - Estilos para pantallas de ancho mínimo de 768px - */
+/* --------------------------------------------------- */
+
 @media (min-width: 768px) {
-  /* Seccion del encabezado */
+
+  /* ---------------------------------- */
+  /* ----- ESTILOS PARA EL HEADER ----- */
+  /* ---------------------------------- */
 
   .header {
-    padding-right: min(8%);
-    padding-left: min(10%);
-    height: 60px;
-    z-index: 1000;
+
+    /* ESPACIADO DERECHO */
+    padding-right: min(8%); 
+
+    /* ESPACIADO IZQUIERDO */
+    padding-left: min(10%); 
+
+    /* ALTURA DEL ENCABEZADO */
+    height: 60px; 
+
+    /* Z-INDEX PARA EL ENCABEZADO */
+    z-index: 1000; 
+
   }
 
+  /* -------------------------------------- */
+  /* - ESTILOS PARA EL MENU DE NAVEGACIÓN - */
+  /* -------------------------------------- */
+
   .nav_menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+
+    /* USAMOS FLEXBOX PARA EL ALINEAMIENTO */
+    display: flex; 
+
+    /* ALINEA LOS ELEMENTOS AL FINAL (DERECHA) */
+    justify-content: flex-end; 
+
+    /* CENTRA LOS ELEMENTOS VERTICALMENTE */
+    align-items: center; 
+
+    /* ELIMINA ESTILOS DE LISTA POR DEFECTO */
+    list-style: none; 
+
   }
 
   .nav_menu.active {
-    left: 0;
+
+  /* POSICIONA EL ELEMENTO ACTIVO DEL MENÚ DE NAVEGACIÓN EN EL LADO IZQUIERDO */
+  left: 0; 
+
   }
 
+  /* ----------------------------------------- */
+  /* --- ESTILOS PARA LOS ENLACES DEL MENÚ --- */
+  /* ----------------------------------------- */
+
   .nav_link {
+
+    /* SE ELIMINA EL SUBRAYADO DE LOS ENLACES */
     text-decoration: none;
-    font: normal 500 15px "Poppins", sans-serif;
-    color: #344563;
-    margin-left: 32px;
+
+    /* SE ESTABLECE LA FUENTE Y TAMAÑO PARA LOS ENLACES */
+    font: normal 500 15px "Poppins", sans-serif; 
+
+    /* COLOR DEL TEXTO PARA LOS ENLACES */
+    color: #344563; 
+
+    /* ESPACIADO A LA IZQUIERDA PARA CADA ENLACE */
+    margin-left: 32px; 
   }
 
   .hamburger {
