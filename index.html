@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en"> <!-- SE ESTABLECE EL IDIOMA DE LA PAGINA EN INGLES -->
+
+  <!----------------------------------------------------->
+  <!-------------- ENCABEZADO DEL SITIO ----------------->
+  <!----------------------------------------------------->
 
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--------------------------------->
+    <!------ NOMBRE DEL SITIO --------->
+    <!---------------------------------> 
+
     <title>Antonio Richaud</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!---------------------------------------->
+    <!-- REFERENCIA AL CODIGO CSS PRINCIPAL -->
+    <!----------------------------------------> 
+
+    <link rel="stylesheet" href="./css/styles.css"/> 
 
   </head>
 
-    <!----------------- Cuerpo del sitio ------------------>
+  <!----------------------------------------------------->
+  <!----------------- INICIO DEL BODY ------------------->
+  <!----------------------------------------------------->
 
   <body>
 
-    <!------------- Configuración del encabezado ------------->
+    <!-------------------------------------------------------->
+    <!--------------------- HEADER.CSS ----------------------->
+    <!-------------------------------------------------------->
 
     <header class="header">
+
+      <!--------------------------------->
+      <!-------- LOGO DEL SITIO --------->
+      <!---------------------------------> 
 
       <a href="#hero" class="header_logo">
 
@@ -24,9 +48,16 @@
 
       </a>
 
+      <!--------------------------------->
+      <!----- NAVEGACION DEL SITIO ------>
+      <!---------------------------------> 
       <nav class="navbar">
 
         <ul class="nav_menu">
+
+          <!--------------------------------->
+          <!----- BOTON AL PORTAFOLIO ------->
+          <!--------------------------------->
 
           <li class="nav_item">
 
@@ -38,6 +69,10 @@
 
           </li>
 
+          <!--------------------------------->
+          <!-------- BOTON AL ABOUT --------->
+          <!--------------------------------->
+
           <li class="nav_item">
 
             <a class="nav_link" href="#about-me">
@@ -48,6 +83,10 @@
 
           </li>
 
+          <!------------------------------------->
+          <!-- BOTON AL FORMULARIO DE CONTACTO -->
+          <!------------------------------------->
+
           <li class="nav_item">
 
             <a class="nav_link" href="#contact-me">
@@ -57,6 +96,10 @@
             </a>
 
           </li>
+
+          <!--------------------------------->
+          <!------- CAMBIO DE IDIOMA -------->
+          <!--------------------------------->
 
           <li class="nav_item">
 
@@ -74,6 +117,10 @@
 
         </ul>  
 
+        <!--------------------------------------->
+        <!-- HAMBURGUESITA PARA RESPONSIVE ------>
+        <!--------------------------------------->  
+
         <div class="hamburger">
 
           <span class="bar"> </span>
@@ -86,37 +133,69 @@
 
     </header> 
 
-    <!------------- Configuración del texto principal ------------->
+    <!------------------------------------------------------------->
+    <!-------------------- LANDING DEL SITIO ---------------------->
+    <!------------------------------------------------------------->
 
-    <main class="main">
+    <main class="main"> <!-- Debemos ubicar este elemento en el css -->
+
+      <!----------------------------------------------------->
+      <!--------------------- HERO.CSS ---------------------->
+      <!----------------------------------------------------->
 
       <section id="hero" class="hero">
 
         <div class="hero__main">
 
-         <!------------- Foto ------------->
+          <!-------------------------------->
+          <!------- AREA DE LA FOTO -------->
+          <!-------------------------------->
 
           <div class="hero-section-foto">
+
+            <!-------------------------------->
+            <!----------- PUNTITOS ----------->
+            <!-------------------------------->
 
             <div class="absolute icons icon-dots">
               <img src="./images/dots.png" alt="" />
             </div>
 
+            <!-------------------------------->
+            <!----------- CUBITO ------------->
+            <!-------------------------------->            
+
             <div class="absolute icons icon-cube">
               <img src="./images/cube.png" alt="" />
             </div>
+
+            <!-------------------------------->
+            <!--------- CIRCULITO ------------>
+            <!-------------------------------->
 
             <div class="absolute icons icon-circle">
               <img src="./images/circle.png" alt="" />
             </div>
 
+            <!-------------------------------->
+            <!---------- ZIGZAGS ------------->
+            <!-------------------------------->
+
             <div class="absolute icons icon-zigzag">
               <img src="./images/zigzags.png" alt="" />
             </div>
 
+            <!-------------------------------->
+            <!---------- SIGNO + ------------->
+            <!-------------------------------->
+
             <div class="absolute icons icon-plus">
               <img src="./images/plus.png" alt="" />
             </div>
+
+            <!-------------------------------->
+            <!-------- FOTO MIA c: ----------->
+            <!-------------------------------->
 
             <div class="user-image">
               <img src="./images/Richaud.png" alt="Richaud" />
@@ -124,12 +203,21 @@
 
           </div>
 
+          <!-------------------------------->
+          <!------ MENSAJE DE ENTRADA ------>
+          <!-------------------------------->
+
           <h1 class="hero__title">
+
             <span class="hero__title-text">I’m Antonio Richaud </span
             ><span class="hero__title-text">Glad to see you!</span>
+
           </h1>
 
-        
+          <!-------------------------------->
+          <!--------- DESCRIPCION ---------->
+          <!-------------------------------->
+
           <p class="hero__description">
             I'm an Electronics Engineer, Data Analyst, and Web/Software Developer 
             with a passion for crafting tailor-made solutions. Whether it's helping 
@@ -137,17 +225,38 @@
             meet unique needs. If you like what you see and have a project you need 
             coded, don’t hestiate to contact me.
           </p>
-          
+
+          <!------------------------------------------------------------->
+          <!-------------- HERO.CSS - .LLAMADA_ACCION ------------------->
+          <!-------------------------------------------------------------> 
+
           <div class="llamada_accion">
 
+            <!--------------------------------->
+            <!-- BOTON DE CONTACTO PRINCIPAL -->
+            <!--------------------------------->
+
             <a class="btnfos btnfos-1" href="#contact-me">
+
               <svg>
+
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+
               </svg>
+
              LET’S WORK TOGETHER
+
             </a> 
 
+            <!--------------------------------->
+            <!--- SECCION DE REDES SOCIALES --->
+            <!--------------------------------->
+
             <ul class="hero_social">
+
+              <!--------------------------------->
+              <!------------ LINKEDIN ----------->
+              <!--------------------------------->
 
               <li class="hero_link">
 
@@ -159,6 +268,10 @@
 
               </li>
 
+              <!--------------------------------->
+              <!------------- MEDIUM ------------>
+              <!--------------------------------->              
+
               <li class="hero_link">
 
                 <a href="#">
@@ -169,6 +282,10 @@
 
               </li>
 
+              <!--------------------------------->
+              <!------------- GITHUB ------------>
+              <!--------------------------------->              
+
               <li class="hero_link">
 
                 <a href="#">
@@ -178,6 +295,11 @@
                 </a>
 
               </li>
+
+              <!--------------------------------->
+              <!----------- ANGELLIST ----------->
+              <!------ CONSIDERA CAMBIARLO ------>
+              <!--------------------------------->              
 
               <li class="hero_link">
 
@@ -197,66 +319,112 @@
 
       </section>
 
-     <!------------- Sección de muestra de proyectos ------------->      
+      <!------------------------------------------------------------->
+      <!------------------ WORKS.CSS - WORKS.JS --------------------->
+      <!------------------------------------------------------------->     
     
      <section id="works" class="works"> 
      </section>
 
-     <!------------------- Seccion acerca de mi ------------------->         
+      <!------------------------------------------------------------->
+      <!----------------------- ABOUT.CSS --------------------------->
+      <!------------------------------------------------------------->         
 
       <section id="about-me" class="about-myself">
 
         <div class="about__main">
 
+          <!--------------------------------->
+          <!----- TITULO DE LA SECCION ------>
+          <!---------------------------------> 
+
           <h2 class="about__title">
-            About <br />
+
+            About <br/>
             Myself
+
           </h2>
 
+          <!--------------------------------->
+          <!--- DESCRIPCION DE LA SECCION --->
+          <!---------------------------------> 
+
           <p class="about__description">
+
             Hey I’m a software developer! I can help you build a product,
             feature or website. Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
             hestiate to contact me.
+
           </p>
+
+          <!--------------------------------->
+          <!--- SECCION DE REDES SOCIALES --->
+          <!---------------------------------> 
 
           <ul class="about__social">
 
+            <!--------------------------------->
+            <!------------- GITHUB ------------>
+            <!--------------------------------->
+
             <li class="about__link">
 
-              <a href="#"
-                ><img src="./images/github.svg" alt="my github profile URL"
-              /></a>
+              <a href="#">
+
+                <img src="./images/github.svg" alt="my github profile URL"/>
+              
+              </a>
 
             </li>
 
+            <!--------------------------------->
+            <!----------- LINKEDIN ------------>
+            <!--------------------------------->
+
             <li class="about__link">
 
-              <a href="#"
-                ><img src="./images/Linkedin.svg" alt="my Linkedin profile URL"
-              /></a>
+              <a href="#">
+
+                <img src="./images/Linkedin.svg" alt="my Linkedin profile URL"/>
+              
+              </a>
 
             </li>
 
+            <!--------------------------------->
+            <!---------- ANGELLIST ------------>
+            <!--------------------------------->
+
             <li class="about__link">
 
-              <a href="#"
-
-                ><img
-                  src="./images/angellist.svg" alt="my angellist profile URL"
-              /></a>
+              <a href="#">
+                
+                <img src="./images/angellist.svg" alt="my angellist profile URL"/>
+              
+              </a>
 
             </li>
 
+            <!--------------------------------->
+            <!------------- MEDIUM ------------>
+            <!--------------------------------->
+
             <li class="about__link">
 
-              <a href="#"
-                ><img src="./images/medium.svg" alt="my medium profile URL"
-              /></a>
+              <a href="#">
+                
+                <img src="./images/medium.svg" alt="my medium profile URL"/>
+              
+              </a>
 
             </li>
 
           </ul>
+
+          <!--------------------------------->
+          <!---------- BOTON DE CV ---------->
+          <!--------------------------------->
 
           <a class="btnfos btnfos-1" href="#contact-me">
 
@@ -272,7 +440,10 @@
 
         </div>
 
-        <!------------------- Habilidades y lenguajes -------------------> 
+        <!--------------------------------->
+        <!--- HABILIDADES Y LENGUAJES ----->
+        <!----- /ELIMINAR CATEGORIES/ ----->
+        <!--------------------------------->
 
         <div class="about__extra">
 
@@ -280,181 +451,303 @@
 
             <li class="menu__link">
 
-              <a href="#"
-                >Languages and skills
+              <!--------------------------------->
+              <!------- TITULO DE SECCION ------->
+              <!--------------------------------->
+              <a href="#">
+                
+                Languages and skills
+
               </a>
 
-              <!-- Primer renglon de iconos -->
+              <!--------------------------------->
+              <!-------- PRIMER RENGLON --------->
+              <!--------------------------------->
+
               <ul class="about__categories-submenu">
 
+                <!--------------------------------->
+                <!---------- JAVASCRIPT ----------->
+                <!--------------------------------->
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/javascript.svg" alt="JavaScript" class="skills-logo"/>
                     <span>JavaScript</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!------------- HTML -------------->
+                <!--------------------------------->                
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/html.svg" alt="HTML" class="skills-logo"/> 
                     <span>HTML</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!------------- CSS --------------->
+                <!---------------------------------> 
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/css.svg" alt="CSS" class="skills-logo"/> 
                     <span>CSS</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!------------ REACT -------------->
+                <!---------------------------------> 
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/React.png" alt="React" class="skills-logo"/>
                     <span>React</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!------------ REDUX -------------->
+                <!---------------------------------> 
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Redux.svg" alt="Redux" class="skills-logo"/>
                     <span>Redux</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!----------- BOOTSTRAP ----------->
+                <!---------------------------------> 
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Bootstrap.svg" alt="Bootstrap" class="skills-logo"/>
                     <span>Bootstrap</span>
+
                   </a>
 
                 </li>
 
               </ul>
 
-              <!-- Segundo renglon de iconos -->
+              <!--------------------------------->
+              <!------- SEGUNDO RENGLON --------->
+              <!--------------------------------->
+
               <ul class="about__categories-submenu">
+
+                <!--------------------------------->
+                <!------------- GIT --------------->
+                <!--------------------------------->                 
 
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Git.svg" alt="Git" class="skills-logo"/>
                     <span>Git</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!----------- GITHUB -------------->
+                <!---------------------------------> 
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/github.svg" alt="Github" class="skills-logo"/>
-                    <span>Github</span>
+                    <span>GitHub</span>
+
                   </a>
 
-                </li>    
-                
+                </li>  
+
+                <!--------------------------------->
+                <!------------- VSC --------------->
+                <!--------------------------------->    
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/VS_Code.svg" alt="Visual Studio Code" class="skills-logo"/>
                     <span>VSC</span>
+
                   </a>
 
                 </li>     
+
+                <!--------------------------------->
+                <!----------- NETLIFY ------------->
+                <!--------------------------------->                 
                 
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Netlify.svg" alt="Netlify" class="skills-logo"/>
                     <span>Netlify</span>
+
                   </a>
 
                 </li>  
 
+                <!--------------------------------->
+                <!------------ VERCEL ------------->
+                <!---------------------------------> 
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Vercel.svg" alt="Vercel" class="skills-logo"/>
                     <span>Vercel</span>
+
                   </a>
 
                 </li>  
 
+                <!--------------------------------->
+                <!----------- INTELLIJ ------------>
+                <!--------------------------------->
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Intellij-Idea.svg" alt="Intellij Idea" class="skills-logo"/>
                     <span>IntelliJ</span>
+
                   </a>
 
                 </li>  
 
               </ul>  
               
-              <!-- Tercer renglon de iconos -->
+              <!--------------------------------->
+              <!-------- TERCER RENGLON --------->
+              <!--------------------------------->
+
               <ul class="about__categories-submenu">
+
+                <!--------------------------------->
+                <!------------ NODEJS ------------->
+                <!--------------------------------->                
 
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/NodeJs.svg" alt="" class="skills-logo" />
                     <span>NodeJs</span>
+
                   </a>
 
                 </li>
 
+                <!--------------------------------->
+                <!------------- NEXT -------------->
+                <!--------------------------------->
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Next.svg" alt="" class="skills-logo" /> 
                     <span>Next</span>
+
                   </a>
 
-                </li>    
-                
+                </li>  
+
+                <!--------------------------------->
+                <!----------- GRAPHQL ------------->
+                <!--------------------------------->
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Graphql.svg" alt="" class="skills-logo" />
                     <span>GraphQL</span>
+
                   </a>
 
                 </li>     
-                
+
+                <!--------------------------------->
+                <!------------ PYTHON ------------->
+                <!--------------------------------->
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/python.svg" alt="Python" class="skills-logo"/>
                     <span>Python</span>
+
                   </a>
 
                 </li>  
 
+                <!--------------------------------->
+                <!------------- BASH -------------->
+                <!--------------------------------->                
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Bash.svg" alt="" class="skills-logo" />
                     <span>Bash</span>
+
                   </a>
 
                 </li>  
 
+                <!--------------------------------->
+                <!------------ DOCKER ------------->
+                <!--------------------------------->
+
                 <li>
 
                   <a class="submenu__link" href="#">
+
                     <img src="./images/Docker.svg" alt="" class="skills-logo" />
                     <span>Docker</span>
+
                   </a>
 
                 </li>  
@@ -471,15 +764,34 @@
 
     </main>
 
-     <!------------------- Pie de pagina y seccion de contacto -------------------> 
+    <!------------------------------------------------------------->
+    <!--------------- FOOTER/FORMULARIO DE CONTACTO --------------->
+    <!--------------------------- FORM.CSS ------------------------>    
+    <!------------------------------------------------------------->  
 
     <footer class="footer">
 
+      <!--------------------------------->
+      <!---- FORMULARIO DE CONTACTO ----->
+      <!---------------------------------> 
+
       <section id="contact-me" class="contact-me">
+
+        <!------------------------------------->
+        <!-- SECCION DE TEXTO DEL FORMULARIO -->
+        <!-------------------------------------> 
 
         <div class="contact-legend">
 
+          <!--------------------------------->
+          <!---- TITULO DEL FORMULARIO ------>
+          <!---------------------------------> 
+
           <h3 class="contact-title">Contact me</h3>
+
+          <!--------------------------------->
+          <!-- DESCRIPCION DEL FORMULARIO --->
+          <!---------------------------------> 
 
           <p class="contact-description">
             If you have a project you are interested in developing, a
@@ -489,45 +801,65 @@
 
         </div>
 
-        <form
-          class="form"
-          id="form"
-          action="https://formspree.io/f/xnqkolwp"
-          method="POST"
-        >
+        <!--------------------------------->
+        <!---------- FORMULARIO ----------->
+        <!--------------------------------->         
+
+        <form class="form" id="form" action="https://formspree.io/f/xnqkolwp" method="POST">
+
+          <!------------------------------------------->
+          <!-- EMPIEZAN LOS ELEMENTOS DEL FORMULARIO -->
+          <!-------------------------------------------> 
 
           <ul class="form-list">
+
+            <!--------------------------------->
+            <!------ NOMBRE DEL CLIENTE ------->
+            <!---------------------------------> 
 
             <li>
 
               <input
+
                 type="text"
                 name="user_name"
                 id="name"
                 placeholder="Write your name"
                 maxlength="30"
                 required
+
               />
 
             </li>
 
+            <!--------------------------------->
+            <!------ E-MAIL DEL CLIENTE ------->
+            <!---------------------------------> 
+
             <li>
 
               <input
+
                 type="email"
                 name="E-mail"
                 id="email"
                 placeholder="Write your email"
                 required
+
               />
 
               <small></small>
 
             </li>
 
+            <!--------------------------------->
+            <!------ MENSAJE DEL CLIENTE ------>
+            <!---------------------------------> 
+
             <li>
 
               <textarea
+
                 name="message"
                 id="message"
                 cols="30"
@@ -535,13 +867,25 @@
                 placeholder="Write your message here"
                 maxlength="500"
                 required
+
               ></textarea>
 
             </li>
 
+            <!--------------------------------->
+            <!------- MENSAJE DE ERROR -------->
+            <!----- SCRIPT: VALIDATION.JS ----->
+            <!---------------------------------> 
+
             <li>
+
               <p id="error-message" class="error-message"></p>
+
             </li>
+
+            <!--------------------------------->
+            <!------- BOTON DE ACCION --------->
+            <!---------------------------------> 
 
             <a class="btnfos btnfos-1" type="submit">
 
@@ -563,6 +907,10 @@
 
     </footer>
 
+    <!------------------------------------------->
+    <!------- JAVASCRIPT DE FUNCIONAMIENTO ------>
+    <!-------------------------------------------> 
+
     <script src="./js/scripts.js"></script>
     <script src="./js/works.js"></script>
     <script src="./js/validation.js"></script>
@@ -570,3 +918,8 @@
   </body>
 
 </html> 
+
+<!------------------------------------------------------------->
+<!---------------------- MADE WITH <3 ------------------------->
+<!----------------- BY ANTONIO RICHAUD c: --------------------->    
+<!-------------------------------------------------------------> 
