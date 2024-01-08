@@ -161,80 +161,125 @@ body {
   }
 
   .hamburger {
-    display: none;
-    cursor: pointer;
+
+    /* OCULTA EL BOTÓN HAMBURGUESA EN PANTALLAS GRANDES */
+    display: none; 
+
+    /* CURSOR PUNTERO PARA INDICAR QUE ES CLICKEABLE */
+    cursor: pointer; 
+
   }
 
   /* Seccion Hero */
   /* .hero {
-    padding-left: min(18%);
-    padding-right: min(18%);
-    background-image: url("../images/header-bg.svg");
-    background-size: cover;
-    width: 100%;
-    margin-top: 60px;
+    padding-left: min(18%); - DEFINE EL RELLENO IZQUIERDO DEL CONTENEDOR HERO
+    padding-right: min(18%); - DEFINE EL RELLENO DERECHO DEL CONTENEDOR HERO
+    background-image: url("../images/header-bg.svg"); - ESTABLECE UNA IMAGEN DE FONDO
+    background-size: cover; - HACE QUE LA IMAGEN DE FONDO CUBRA TODO EL CONTENEDOR
+    width: 100%; - EL CONTENEDOR HERO OCUPA EL 100% DEL ANCHO
+    margin-top: 60px; - MARGEN SUPERIOR DE 60PX
   }
   */
 
+  /* ---------------------------------------------------- */
+  /* --- CONFIGURACIÓN DEL TÍTULO DEL CONTENEDOR HERO --- */
+  /* ---------------------------------------------------- */
 
   .hero__title {
-    margin-top: min(30%);
-    font-size: 48px;
-    display: flex;
-    flex-direction: column;
+
+    /* MARGEN SUPERIOR DEL TÍTULO DEL HÉROE, MÍNIMO 30% */
+    margin-top: min(30%); 
+
+    /* TAMAÑO DE FUENTE DEL TÍTULO DEL HÉROE */
+    font-size: 48px; 
+
+    /* DISPLAY FLEX PARA ORGANIZAR LOS ELEMENTOS DEL TÍTULO */
+    display: flex; 
+
+    /* ELEMENTOS DEL TÍTULO ORGANIZADOS VERTICALMENTE */
+    flex-direction: column; 
   }
 
+  /* ------------------------------------------ */
+  /* --- CONFIGURACIÓN DEL TEXTO DEL TÍTULO --- */
+  /* ------------------------------------------ */
+  
   .hero__title-text {
-    width: min(100%);
+
+    /* ANCHO DEL TEXTO DEL TÍTULO, MÍNIMO 100% */
+    width: min(100%); 
+
   }
+
+  /* -------------------------------------------------- */
+  /* CONFIGURACIÓN DE LA DESCRIPCIÓN EN LA SECCIÓN HERO */
+  /* -------------------------------------------------- */
 
   .hero__description {
-    font-size: 20px;
-    line-height: 28px;
+
+    /* TAMAÑO DE LA FUENTE DE LA DESCRIPCIÓN */
+    font-size: 20px; 
+
+    /* ALTURA DE LÍNEA PARA LA DESCRIPCIÓN */
+    line-height: 28px; 
+
   }
+
+  /* ---------------------------------------------------------- */
+  /* CONFIGURACIÓN DE LOS ELEMENTOS SOCIALES EN LA SECCIÓN HERO */
+  /* ---------------------------------------------------------- */
 
   .hero__social {
-    margin-bottom: min(25%);
+
+    /* MARGEN INFERIOR PARA LA SECCIÓN SOCIAL, MÍNIMO 25% */
+    margin-bottom: min(25%); 
+
   }
 
-  /* Seccion de trabajos */
+  /* ----------------------------- */
+  /* ---- SECCIÓN DE TRABAJOS ---- */
+  /* ----------------------------- */
+
   .works {
-    grid-template-columns: 10% auto 10%;
+
+    /* DEFINE UNA GRID CON COLUMNAS DE 10%, AUTO Y 10% */
+    grid-template-columns: 10% auto 10%; 
+
   }
 
-  /* Tarjetas 
-  .card-project {
-    flex-direction: row;
-    padding: min(2%);
+  /* TARJETAS DE PROYECTOS - COMENTADO */
+  /* .card-project {
+    flex-direction: row; - ELEMENTOS DE LA TARJETA EN FILA
+    padding: min(2%); - RELLENO DE LA TARJETA
   }
 
   .card__image {
-    width: min(50%);
-    display: flex;
-    align-items: center;
+    width: min(50%); - ANCHO DE LA IMAGEN DE LA TARJETA
+    display: flex; - UTILIZA FLEXBOX
+    align-items: center; - CENTRA ELEMENTOS VERTICALMENTE
   }
 
   .card__img {
-    width: min(100%);
-    height: min(100%);
+    width: min(100%); - LA IMAGEN OCUPA EL 100% DEL ANCHO
+    height: min(100%); - LA IMAGEN OCUPA EL 100% DE LA ALTURA
   }
 
   .card__body {
-    width: min(50%);
-    padding-bottom: min(13%);
-    margin-left: 16px;
+    width: min(50%); - EL CUERPO DE LA TARJETA OCUPA EL 50% DEL ANCHO
+    padding-bottom: min(13%); - RELLENO INFERIOR DEL CUERPO DE LA TARJETA
+    margin-left: 16px; - MARGEN IZQUIERDO DEL CUERPO DE LA TARJETA
   }
 
   .card__swap-r {
-    transform: translate(100%);
+    transform: translate(100%); - DESPLAZA LA TARJETA HACIA LA DERECHA
   }
 
   .card__swap-l {
-    transform: translate(-100%);
+    transform: translate(-100%); - DESPLAZA LA TARJETA HACIA LA IZQUIERDA
   }
 
   .card__title {
-    margin-top: 22px;
+    margin-top: 22px; - MARGEN SUPERIOR DEL TÍTULO DE LA TARJETA
   }
   */
 
