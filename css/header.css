@@ -1,162 +1,275 @@
-/* Configuracion general del encabezado */
+/* ------------------------------------------------- */
+/* ------------ ESTILOS DEL HEADER CSS ------------- */
+/* --------- PORTAFOLIO DE ANTONIO RICHAUD --------- */
+/* ------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* ----- CONFIGURACIÓN GENERAL DEL ENCABEZADO ------- */
+/* -------------------------------------------------- */
+
 header {
-  background-color: #fff;
-  width: 100vw;
-  height: 48px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
+
+  /* COLOR DE FONDO BLANCO */
+  background-color: #fff; 
+
+  /* ANCHO DE 100% DEL VIEWPORT */
+  width: 100vw; 
+
+  /* ALTURA FIJA DE 48PX */
+  height: 48px; 
+
+  /* POSICIÓN FIJA */
+  position: fixed; 
+
+  /* SUPERIOR EN 0 PARA PEGARSE A LA PARTE SUPERIOR DE LA PANTALLA */
+  top: 0; 
+
+  /* IZQUIERDA EN 0 PARA ALINEARSE A LA IZQUIERDA DE LA PANTALLA */
+  left: 0; 
+
+  /* USA FLEXBOX PARA LA DISPOSICIÓN DE LOS ELEMENTOS */
+  display: flex; 
+
+  /* CENTRA LOS ELEMENTOS VERTICALMENTE */
+  align-items: center; 
+
+  /* ESPACIADO ENTRE ELEMENTOS */
+  justify-content: space-between; 
+
+  /* ÍNDICE Z PARA QUE ESTÉ ENCIMA DE OTROS ELEMENTOS */
+  z-index: 1; 
 }
 
-/* Configuración del logo del encabezado */
+/* -------------------------------------------------- */
+/* ---- CONFIGURACIÓN DEL LOGO DEL ENCABEZADO ------- */
+/* -------------------------------------------------- */
+
 .header_logo {
-  width: 200px;
-  height: 20px;
-  margin-left: 24px;
-  color: #6070ff;
-  font: normal 700 18px "Poppins", sans-serif;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+
+  /* ANCHO FIJO DE 200PX */
+  width: 200px; 
+
+  /* ALTURA FIJA DE 20PX */
+  height: 20px; 
+
+  /* MARGEN IZQUIERDO DE 24PX */
+  margin-left: 24px; 
+
+  /* COLOR DEL TEXTO MORADO */
+  color: #6070ff; 
+
+  /* FUENTE POPPINS CON PESO 700 Y TAMAÑO 18PX */
+  font: normal 700 18px "Poppins", sans-serif; 
+
+  /* SIN DECORACIÓN DE TEXTO */
+  text-decoration: none; 
+
+  /* USA FLEXBOX PARA LA DISPOSICIÓN DE LOS ELEMENTOS */
+  display: flex; 
+
+  /* CENTRA EL CONTENIDO HORIZONTALMENTE */
+  justify-content: center; 
+
+  /* CENTRA EL CONTENIDO VERTICALMENTE */
+  align-items: center; 
+
+  /* CURSOR TIPO PUNTERO */
+  cursor: pointer; 
 }
 
-/* Configuracion de la barra de navegacion del encabezado */
+/* ------------------------------------------------------------ */
+/* -- CONFIGURACION DE LA BARRA DE NAVEGACION DEL ENCABEZADO -- */
+/* ------------------------------------------------------------ */
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 36px;
+
+  /* USA FLEXBOX PARA LA DISPOSICIÓN DE ELEMENTOS */
+  display: flex; 
+
+  /* ESPACIA LOS ELEMENTOS UNIFORMEMENTE */
+  justify-content: space-between; 
+
+  /* CENTRA LOS ELEMENTOS VERTICALMENTE */
+  align-items: center; 
+
+  /* MARGEN DERECHO DE 36PX */
+  margin-right: 36px; 
 
 }
 
-/* Configuación de cada uno de los elementos de la barra de navegación */
+/* ------------------------------------------------------------------- */
+/* CONFIGUACIÓN DE CADA UNO DE LOS ELEMENTOS DE LA BARRA DE NAVEGACIÓN */
+/* ------------------------------------------------------------------- */
+
 .nav_link {
-  transition: 0.7s ease;
-  color: #fff;
+
+  /* TRANSICIÓN SUAVE DE 0.7S */
+  transition: 0.7s ease; 
+
+  /* COLOR DE TEXTO BLANCO */
+  color: #fff; 
+
 }
+
+/* ------------------------------------ */
+/* ----- HOVER DE LOS ELEMENTOS ------- */
+/* ------------------------------------ */
 
 .nav_link:hover {
-  color: #6070ff;
+  
+  /* COLOR DE TEXTO MORADO MÁS FUERTE AL PASAR EL RATÓN */
+  color: #6070ff; 
+
 }
 
-/* Estudiar para que es esto */
-
 .nav_menu.active {
-  left: 0;
+
+  /* POSICIÓN IZQUIERDA A 0 CUANDO ESTÁ ACTIVO */
+  left: 0; 
+
 }
 
 .hamburger {
-  display: block;
-  cursor: pointer;
+
+  /* MUESTRA EL ELEMENTO */
+  display: block; 
+
+  /* ESTILO DE CURSOR COMO PUNTERO */
+  cursor: pointer; 
+
 }
 
 .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #6070ff;
+
+  /* MUESTRA EL ELEMENTO */
+  display: block; 
+
+  /* ANCHO FIJO DE 25PX */
+  width: 25px; 
+
+  /* ALTURA FIJA DE 3PX */
+  height: 3px; 
+
+  /* MARGEN DE 5PX ARRIBA Y ABAJO, CENTRADO HORIZONTALMENTE */
+  margin: 5px auto; 
+
+  /* TRANSICIÓN SUAVE DE 0.3S */
+  transition: all 0.3s ease-in-out; 
+
+  /* COLOR DE FONDO AZUL */
+  background-color: #6070ff; 
+
 }
 
 .hamburger.active .bar:nth-child(2) {
-  opacity: 0;
+
+  /* OCULTA LA SEGUNDA BARRA CUANDO ESTÁ ACTIVO */
+  opacity: 0; 
+
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-  background-color: #fff;
+
+  /* DESPLAZA Y ROTA LA PRIMERA BARRA */
+  transform: translateY(8px) rotate(45deg); 
+
+  /* COLOR DE FONDO BLANCO */
+  background-color: #fff; 
+
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background-color: #fff;
+
+  /* DESPLAZA Y ROTA LA TERCERA BARRA */
+  transform: translateY(-8px) rotate(-45deg); 
+
+  /* COLOR DE FONDO BLANCO */
+  background-color: #fff; 
+
 }
 
 .no-scroll {
-  overflow-y: hidden;
+
+  /* OCULTA EL DESPLAZAMIENTO VERTICAL */
+  overflow-y: hidden; 
+
 }
 
-/* Configuración del boton de idiomas (Arreglar) */
+/* ----------------------------------------------------- */
+/* --- CONFIGURACIÓN DEL BOTON DE IDIOMAS (ARREGLAR) --- */
+/* ----------------------------------------------------- */
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+  position: relative; /* POSICIONAMIENTO RELATIVO */
+  display: inline-block; /* MUESTRA COMO BLOQUE EN LÍNEA */
 }
 
 .dropbtn {
-  background-color: #fff;
-  color: #6070ff;
-  font: normal 600 18px "Poppins", sans-serif;
-  border: none;
-  cursor: pointer;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  border-radius: 8px;
-  transition: 0.3s;
+  background-color: #fff; /* COLOR DE FONDO BLANCO */
+  color: #6070ff; /* COLOR DE TEXTO AZUL */
+  font: normal 600 18px "Poppins", sans-serif; /* FUENTE POPPINS CON PESO 600 Y TAMAÑO 18PX */
+  border: none; /* SIN BORDES */
+  cursor: pointer; /* ESTILO DE CURSOR COMO PUNTERO */
+  padding: 0 16px; /* RELLENO HORIZONTAL DE 16PX */
+  display: flex; /* USA FLEXBOX PARA LA DISPOSICIÓN DE ELEMENTOS */
+  align-items: center; /* CENTRA EL CONTENIDO VERTICALMENTE */
+  justify-content: center; /* CENTRA EL CONTENIDO HORIZONTALMENTE */
+  height: 48px; /* ALTURA FIJA DE 48PX */
+  border-radius: 8px; /* RADIO DE BORDE DE 8PX */
+  transition: 0.3s; /* TRANSICIÓN SUAVE DE 0.3S */
 }
 
 .dropbtn:hover {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: #6070ff; /* COLOR DE FONDO AZUL AL PASAR EL RATÓN */
+  color: #fff; /* COLOR DE TEXTO BLANCO AL PASAR EL RATÓN */
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(96, 112, 255, 0.2);
-  z-index: 1;
-  border-radius: 8px;
-  padding: 8px 0;
+  display: none; /* OCULTA EL CONTENIDO INICIALMENTE */
+  position: absolute; /* POSICIONAMIENTO ABSOLUTO */
+  background-color: #fff; /* COLOR DE FONDO BLANCO */
+  min-width: 160px; /* ANCHO MÍNIMO DE 160PX */
+  box-shadow: 0px 8px 16px 0px rgba(96, 112, 255, 0.2); /* SOMBRA DE CAJA */
+  z-index: 1; /* INDICE Z PARA CONTROLAR EL APILAMIENTO */
+  border-radius: 8px; /* RADIO DE BORDE DE 8PX */
+  padding: 8px 0; /* RELLENO VERTICAL DE 8PX */
 }
 
 .dropdown-content a {
-  color: #6070ff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font: normal 600 18px "Poppins", sans-serif;
-  transition: 0.3s;
+  color: #6070ff; /* COLOR DE TEXTO AZUL */
+  padding: 12px 16px; /* RELLENO DE 12PX VERTICAL Y 16PX HORIZONTAL */
+  text-decoration: none; /* SIN DECORACIÓN DE TEXTO */
+  display: block; /* MUESTRA COMO BLOQUE */
+  font: normal 600 18px "Poppins", sans-serif; /* FUENTE POPPINS CON PESO 600 Y TAMAÑO 18PX */
+  transition: 0.3s; /* TRANSICIÓN SUAVE DE 0.3S */
 }
 
 .dropdown-content a:hover {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: #6070ff; /* COLOR DE FONDO AZUL AL PASAR EL RATÓN */
+  color: #fff; /* COLOR DE TEXTO BLANCO AL PASAR EL RATÓN */
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block; /* MUESTRA EL CONTENIDO AL PASAR EL RATÓN SOBRE EL DROPDOWN */
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: #6070ff; /* COLOR DE FONDO AZUL AL PASAR EL RATÓN SOBRE EL BOTÓN */
+  color: #fff; /* COLOR DE TEXTO BLANCO AL PASAR EL RATÓN SOBRE EL BOTÓN */
 }
 
 .dropdown-content a::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/flags.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline-block;
-  margin-right: 8px;
+  content: ""; /* CONTENIDO VACÍO PARA EL PSEUDO-ELEMENTO ::before */
+  width: 24px; /* ANCHO DE 24PX */
+  height: 24px; /* ALTURA DE 24PX */
+  background-image: url("../img/flags.png"); /* IMAGEN DE FONDO DE BANDERAS */
+  background-repeat: no-repeat; /* SIN REPETICIÓN DE IMAGEN */
+  background-size: 100%; /* TAMAÑO DE LA IMAGEN AL 100% */
+  display: inline-block; /* MUESTRA COMO BLOQUE EN LÍNEA */
+  margin-right: 8px; /* MARGEN DERECHO DE 8PX */
 }
-/* Fin de la configuración del boton de idiomas */
+/* FIN DE LA CONFIGURACIÓN DEL BOTON DE IDIOMAS */
 
-/* Configuración para la Macbook Air de 13 pulgadas */
 @media only screen and (max-width: 768px) {
 
   .nav_menu {
