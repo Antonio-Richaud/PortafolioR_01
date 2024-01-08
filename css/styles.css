@@ -1,12 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("./header.css");
+/* ------------------------------------------------- */
+/* ------------- HOJA PRINCIPAL DE CSS ------------- */
+/* --------- PORTAFOLIO DE ANTONIO RICHAUD --------- */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ----- IMPORTACION DE FUNTES Y ARCHIVOS CSS -----  */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* -SE IMPORTA LA FUENTE POPPINS DESDE GOOGLE FONTS- */
+/* ------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); 
+
+/* ------------------------------------------------- */
+/* ------ DIRECCION A LOS ESTILOS DEL HEADER ------  */
+/* ------------------------------------------------- */
+@import url("./header.css"); 
+
+/* ------------------------------------------------- */
+/* -- DIRECCION A LOS ESTILOS DE LA SECCION HERO --- */
+/* ------------------------------------------------- */
+
 @import url("./hero.css");
-@import url("./works.css");
-@import url("./card.css");
-@import url("./button.css");
-@import url("./about.css");
-@import url("./form.css");
-@import url("./modal.css");
+
+/* ------------------------------------------------- */
+/* -- DIRECCION A LOS ESTILOS DE LA SECCION WORKS -- */
+/* ------------------------------------------------- */
+
+@import url("./works.css"); 
+
+/* ------------------------------------------------- */
+/* ---- DIRECCION A LOS ESTILOS DE LAS TARJETAS ---- */
+/* ------------------------------------------------- */
+
+@import url("./card.css"); 
+
+/* ------------------------------------------------- */
+/* ---- DIRECCION A LOS ESTILOS DE LOS BOTONES ----- */
+/* ------------------------------------------------- */
+
+@import url("./button.css"); 
+
+/* ------------------------------------------------- */
+/* -- DIRECCION A LOS ESTILOS DE LA SECCION ABOUT -- */
+/* ------------------------------------------------- */
+
+@import url("./about.css"); 
+
+/* ------------------------------------------------- */
+/* ---- DIRECCION A LOS ESTILOS DEL FORMULARIO ----- */
+/* ------------------------------------------------- */
+
+@import url("./form.css"); 
+
+/* ------------------------------------------------- */
+/* ------ DIRECCION A LOS ESTILOS PARA MODAL ------- */
+/* SE DEBE INVESTIGAR DONDE ESTA INTEGRADO ESTE CSS  */
+/* ------------------------------------------------- */
+@import url("./modal.css"); 
 
 * {
   margin: 0;
@@ -232,5 +283,3 @@ body {
     align-self: center;
   }*/
 }
-
-
